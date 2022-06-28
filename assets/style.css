@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 0 40px;
+}
+.cantainer-phone {
+  padding: 0 10px;
+}
+.left ul {
+  display: flex;
+  list-style: none;
+}
+.header-all {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.left ul li {
+  margin-right: 40px;
+  font-size: 14px;
+  color: #747674;
+}
+.right a,
+select {
+  margin-left: 20px;
+  color: #747674;
+  font-size: 15px;
+}
+.right select {
+  border: none;
+}
+.right a i {
+  margin: 0 5px;
+}
+.header-all-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-all-2 .logo {
+  width: 12%;
+}
+.header-all-2 .novbar {
+  width: 85%;
+}
+.header-all-2 .logo img {
+  width: 100%;
+}
+.header-all-2 .novbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header-all-2 .novbar a,
+span,
+i {
+  font-size: 15px;
+}
+.header-all-2 .novbar .text-left a {
+  margin-left: 20px;
+  color: #747674;
+}
+.header-all-2 .novbar .text-right span {
+  margin-left: 10px;
+  color: #0056c1;
+}
+.header-all-2 .novbar .text-right i {
+  color: #0056c1;
+}
+#header-2 {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.header-3-all li {
+  list-style: none;
+  color: black;
+}
+.header-3-all ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header-3-all {
+  width: 75%;
+  padding: 30px 0;
+}
+#header-3 {
+  position: sticky;
+  top: 40px;
+  background-color: white;
+}
+#body-1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #afb9cd;
+  align-items: center;
+}
+#body-1 .body-1-left {
+  width: 45%;
+  text-align: left;
+  margin-left: 200px;
+}
+#body-1 .body-1-right {
+  width: 45%;
+  margin-right: 200px;
+}
+#body-1 .body-1-right img {
+  width: 100%;
+}
+#body-1 .body-1-left h3 {
+  font-size: 45px;
+  color: #262626;
+  margin-bottom: 24px;
+}
+#body-1 .body-1-left h5 {
+  font-size: 18px;
+  color: #262626;
+  margin-bottom: 60px;
+}
+#body-1 .body-1-left a {
+  padding: 15px 35px;
+  color: #262626;
+  margin-top: 24px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#Sade-kecidler {
+  margin: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+#Sade-kecidler .box {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f4f8;
+}
+#Sade-kecidler .box img {
+  width: 100%;
+}
+#Sade-kecidler .box .text h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#Sade-kecidler .box .text p {
+  font-size: 15px;
+  margin-bottom: 40px;
+  height: 50px;
+}
+#Sade-kecidler .box .text a {
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 12px 16px;
+  color: white;
+  background-color: #0056c1;
+  border-radius: 5px;
+}
+#phone-header {
+  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+#phone-header .header-1 {
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 20px 0;
+}
+#phone-header .header-1 box {
+  width: 50%;
+}
+#phone-header .header-1 box {
+  width: 50%;
+}
+#phone-header .header-1 .box select {
+  border: none;
+}
+#phone-header-2 {
+  display: none;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 40px;
+}
+#phone-header-2 .header-all {
+  display: flex;
+  justify-content: space-between;
+  
+}
+#phone-header-2 .header-all .box-logo {
+  width: 40%;
+}
+#phone-header-2 .header-all .box-menu {
+  width: 20%;
+  text-align: end;
+  margin-right: 10px;
+}
+#phone-header-2 .header-all .box-logo img {
+  width: 100%;
+}
+#phone-header-2 .header-all .box-menu i {
+  font-size: 40px;
+}
+
+@media (max-width: 576px) {
+  header .header-all {
+    display: none;
+  }
+  #phone-header {
+    display: block;
+  }
+  #header-2 {
+    display: none;
+  }
+  #header-3 {
+    display: none;
+  }
+  #phone-header-2 {
+    display: block;
+  }
+  #body-1{
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  #body-1 .body-1-left{
+    width: 100%;
+    margin-top: 150px;
+    margin-left: 0;
+    text-align: center;
+    
+  }
+  #body-1 .body-1-right{
+    width: 80%;
+    margin-right: 0;
+    margin-top: 40px;
+    
+    
+  }
+  #body-1 .body-1-left h3{
+    
+    font-size: 20px;
+    
+  }
+  #body-1 .body-1-left h5{
+    
+    font-size: 15px;
+    
+  }
+  #Sade-kecidler{
+    flex-direction: column;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  #Sade-kecidler .box{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #Sade-kecidler .box .text{
+    width: 45%;
+    text-align: start;
+    padding: 0 10px;
+  }
+  #Sade-kecidler .box .pics{
+    width: 45%;
+    text-align: end;
+    padding: 0 10px;
+    
+  }
+  #Sade-kecidler .box .pics img{
+    width: 80%;
+    
+    
+  }
+  
+}
